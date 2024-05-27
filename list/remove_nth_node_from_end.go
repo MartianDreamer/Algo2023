@@ -2,24 +2,24 @@ package list
 
 func RemoveNthFromEnd(head *ListNode, n int) *ListNode {
 	count, point := 1, head
-	var preSavedPoint *ListNode
+	var preRemovedPoint *ListNode
 	for point != nil {
 		if count > n {
-			if preSavedPoint == nil {
-				preSavedPoint = head
+			if preRemovedPoint == nil {
+				preRemovedPoint = head
 			} else {
-				preSavedPoint = preSavedPoint.Next
+				preRemovedPoint = preRemovedPoint.Next
 			}
 		}
 		count++
 		point = point.Next
 	}
-	if preSavedPoint == nil {
+	if preRemovedPoint == nil {
 		return head.Next
-	} else if preSavedPoint.Next != nil {
-		preSavedPoint.Next = preSavedPoint.Next.Next
+	} else if preRemovedPoint.Next != nil {
+		preRemovedPoint.Next = preRemovedPoint.Next.Next
 	} else {
-		preSavedPoint.Next = nil
+		preRemovedPoint.Next = nil
 	}
 	return head
 }
