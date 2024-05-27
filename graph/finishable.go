@@ -12,8 +12,8 @@ func CanFinish(numCourses int, prerequisites [][]int) bool {
 			preMap[pre[0]][0] = pre[1]
 		}
 	}
+	remMap := make([]int, numCourses)
 	for i := range numCourses {
-		remMap := make([]int, numCourses)
 		if cycle_detect(i, preMap, remMap) {
 			return false
 		}
