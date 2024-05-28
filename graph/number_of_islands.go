@@ -4,20 +4,13 @@ func NumIslands(grid [][]byte) int {
 	row := len(grid)
 	col := len(grid[0])
 	count := 0
-	visitted := make([][]bool, row)
-	for i := range visitted {
-		visitted[i] = make([]bool, col)
-	}
 	for ir, r := range grid {
 		for ic, c := range r {
 			if c != 49 {
 				continue
 			}
-			if visitted[ir][ic] {
-				continue
-			}
 			count++
-			dfs(ic, ir, row, col, visitted, grid)
+			dfs(ic, ir, row, col, grid)
 		}
 	}
 	return count
@@ -44,16 +37,13 @@ func neighbors(islandX int, islandY int, row int, col int, graph [][]byte) [][2]
 	return rs
 }
 
-func dfs(islandX int, islandY int, row int, col int, visitted [][]bool, graph [][]byte) {
-	if visitted[islandY][islandX] {
+func dfs(islandX int, islandY int, row int, col int, graph [][]byte) {
+	if graph[islandY][islandX] != 49 {
 		return
 	}
-	visitted[islandY][islandX] = true
+	graph[islandY][islandX] = 50
 	neighbors := neighbors(islandX, islandY, row, col, graph)
 	for _, v := range neighbors {
-		if visitted[v[1]][v[0]] {
-			continue
-		}
-		dfs(v[0], v[1], row, col, visitted, graph)
+		dfs(v[0], v[1], row, col, graph)
 	}
 }
