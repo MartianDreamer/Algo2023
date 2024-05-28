@@ -1,7 +1,5 @@
 package graph
 
-import "fmt"
-
 func CanFinish(numCourses int, prerequisites [][]int) bool {
 	preMap := make([][]int, numCourses)
 	for _, pre := range prerequisites {
