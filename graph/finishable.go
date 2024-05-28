@@ -38,7 +38,7 @@ func dfs_cycle_detect(root int, graph [][]int, status []int) bool {
 	return false
 }
 
-func bfs_detect_cycle(root int, numCourses int, graph [][]int) bool {
+func Bfs_detect_cycle(root int, numCourses int, graph [][]int) bool {
 	queue := make([]int, 0, numCourses)
 	queue = append(queue, root)
 	visitted := make([]bool, numCourses)
