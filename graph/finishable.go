@@ -1,44 +1,40 @@
 package graph
 
 func CanFinish(numCourses int, prerequisites [][]int) bool {
-	preMap := make([][]int, numCourses)
+	graph := make([][]int, numCourses)
 	for _, pre := range prerequisites {
-		if v := preMap[pre[0]]; v != nil {
-			preMap[pre[0]] = append(preMap[pre[0]], pre[1])
+		if v := graph[pre[0]]; v != nil {
+			graph[pre[0]] = append(graph[pre[0]], pre[1])
 		} else {
-			preMap[pre[0]] = make([]int, 1, numCourses)
-			preMap[pre[0]][0] = pre[1]
+			graph[pre[0]] = make([]int, 1, numCourses)
+			graph[pre[0]][0] = pre[1]
 		}
 	}
-	remMap := make([]int, numCourses)
+	visitted := make([]int, numCourses)
 	for i := range numCourses {
-		if cycle_detect(i, preMap, remMap) {
+		if dfs_cycle_detect(i, graph, visitted) {
 			return false
 		}
 	}
 	return true
 }
 
-func cycle_detect(root int, preMap [][]int, remMap []int) bool {
-	if remMap[root] == -2 {
-		remMap[root] = 1
+// 0 not visit, 2 being visitting, 1 not cycle, 3 cycle
+func dfs_cycle_detect(root int, graph [][]int, status []int) bool {
+	if status[root] == 2 {
+		status[root] = 3
 		return true
-	} else if remMap[root] == 1 {
-		return true
-	} else if remMap[root] == -1 {
-		return false
+	} else if status[root] != 0 {
+		return status[root] == 3
 	}
-	remMap[root] = -2
-	for i := 0; i < len(preMap[root]); i++ {
-		if cycle_detect(preMap[root][i], preMap, remMap) {
-			remMap[preMap[root][i]] = 1
-			remMap[root] = 1
+	status[root] = 2
+	for _, v := range graph[root] {
+		if dfs_cycle_detect(v, graph, status) {
+			status[root] = 3
 			return true
-		} else {
-			remMap[preMap[root][i]] = -1
 		}
 	}
-	remMap[root] = -1
+	status[root] = 1
 	return false
 }
 
