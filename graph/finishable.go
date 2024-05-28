@@ -32,7 +32,6 @@ func cycle_detect(root int, preMap [][]int, remMap []int) bool {
 	}
 	remMap[root] = -2
 	for i := 0; i < len(preMap[root]); i++ {
-		fmt.Printf("root: %v\tnextRoot: %v\n", root, preMap[root][i])
 		if cycle_detect(preMap[root][i], preMap, remMap) {
 			remMap[preMap[root][i]] = 1
 			remMap[root] = 1
