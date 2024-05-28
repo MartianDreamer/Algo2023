@@ -44,3 +44,22 @@ func cycle_detect(root int, preMap [][]int, remMap []int) bool {
 	remMap[root] = -1
 	return false
 }
+
+func bfs_detect_cycle(root int, numCourses int, graph [][]int) bool {
+	queue := make([]int, 0, numCourses)
+	queue = append(queue, root)
+	visitted := make([]bool, numCourses)
+	for len(queue) > 0 {
+		s := queue[0]
+		visitted[s] = true
+		queue = queue[1:]
+		for _, v := range graph[s] {
+			if !visitted[v] {
+				queue = append(queue, v)
+			} else if v == root {
+				return true
+			}
+		}
+	}
+	return false
+}
