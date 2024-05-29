@@ -1,10 +1,10 @@
 
 Array
 
-- [x] Two Sum - https://leetcode.com/problems/two-sum/
-- [x] Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-- [x] Contains Duplicate - https://leetcode.com/problems/contains-duplicate/
-- [x] Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/
+- [x] Two Sum - https://leetcode.com/problems/two-sum/ - [Solution](array/two_sum.py)
+- [x] Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ - [Solution](array/121_buy_and_sell_stock.py)
+- [x] Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ [Solution](array/217_contains_dup.py)
+- [x] Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/ [Solution](array/238_product_of_array_except_self.py)
 - [ ] Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
 - [ ] Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
 - [ ] Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
@@ -16,11 +16,11 @@ Array
 
 Binary
 
-- [x] Sum of Two Integers - https://leetcode.com/problems/sum-of-two-integers/
-- [x] Number of 1 Bits - https://leetcode.com/problems/number-of-1-bits/
-- [x] Counting Bits - https://leetcode.com/problems/counting-bits/
-- [x] Missing Number - https://leetcode.com/problems/missing-number/
-- [x] Reverse Bits - https://leetcode.com/problems/reverse-bits/
+- [x] Sum of Two Integers - https://leetcode.com/problems/sum-of-two-integers/ - [Solution](/binary/371_sum_of_integers.py)
+- [x] Number of 1 Bits - https://leetcode.com/problems/number-of-1-bits/ - [Solution](/binary/191_number_of_ones.py)
+- [x] Counting Bits - https://leetcode.com/problems/counting-bits/ - [Solution](/binary/338_count_bits.py)
+- [x] Missing Number - https://leetcode.com/problems/missing-number/ - [Solution](/binary/268_missing_number.py)
+- [x] Reverse Bits - https://leetcode.com/problems/reverse-bits/ - [Solution](/binary/190_reverse_bits.py)
 
 ---
 
