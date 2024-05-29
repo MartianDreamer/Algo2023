@@ -65,7 +65,7 @@ Interval
 
 Linked List
 
-- [x] Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
+- [x] Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/ - [Solution](/list/206_reverse_list.py)
 - [x] Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
 - [x] Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
 - [x] Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
