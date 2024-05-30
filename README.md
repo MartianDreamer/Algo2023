@@ -68,9 +68,9 @@ Linked List
 - [x] Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/ - [Solution](/list/206_reverse_list.py)
 - [x] Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/ - [Solution](/list/141_detect_cycle.py)
 - [x] Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/ - [Solution](/list/21_merge_two_list.py)
-- [x] Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/ - [Solution]
-- [x] Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-- [x] Reorder List - https://leetcode.com/problems/reorder-list/
+- [x] Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/ - [Solution](/list/23_merge_k_sorted_list.py)
+- [x] Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/ - [Solution](/list/19_remove_nth_node_from_end.py)
+- [x] Reorder List - https://leetcode.com/problems/reorder-list/ - [Solution](/list/143_reorder_list.py)
 
 ---
 
