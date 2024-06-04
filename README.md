@@ -46,7 +46,7 @@ Graph
 - [x] Course Schedule - https://leetcode.com/problems/course-schedule/ - [Solution](/graph/207_course_schedule.py)
 - [x] Pacific Atlantic Water Flow - https://leetcode.com/problems/pacific-atlantic-water-flow/ - [Solution](/graph/417_pacific_water_flow.py)
 - [x] Number of Islands - https://leetcode.com/problems/number-of-islands/ - [Solution](/graph/200_number_of_islands.py)
-- [ ] Longest Consecutive Sequence - https://leetcode.com/problems/longest-consecutive-sequence/
+- [x] Longest Consecutive Sequence - https://leetcode.com/problems/longest-consecutive-sequence/ - [Solution](/graph/128_longest_consecutive_sequence.py)
 - [ ] Alien Dictionary (Leetcode Premium) - https://leetcode.com/problems/alien-dictionary/
 - [ ] Graph Valid Tree (Leetcode Premium) - https://leetcode.com/problems/graph-valid-tree/
 - [ ] Number of Connected Components in an Undirected Graph (Leetcode Premium) - https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
