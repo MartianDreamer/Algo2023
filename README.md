@@ -5,7 +5,7 @@ Array
 - [x] Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ - [Solution](array/121_buy_and_sell_stock.py)
 - [x] Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ [Solution](array/217_contains_dup.py)
 - [x] Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/ [Solution](array/238_product_of_array_except_self.py)
-- [ ] Maximum Subarray - https://leetcode.com/problems/maximum-subarray/
+- [x] Maximum Subarray - https://leetcode.com/problems/maximum-subarray/ - [Solution](array/53_maximum_subarray.py)
 - [ ] Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
 - [ ] Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 - [ ] Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
