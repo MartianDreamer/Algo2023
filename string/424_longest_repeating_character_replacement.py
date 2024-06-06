@@ -17,13 +17,3 @@ class Solution:
             charCount[s[start]] -= 1
             start += 1
         return rs
-        
-
-
-
-print(Solution().characterReplacement("AABABBA", 1))
-print(Solution().characterReplacement("AABBAABBAA", 3))
-print(Solution().characterReplacement("ABAB", 2))
-print(Solution().characterReplacement("ABBB", 2))
-print(Solution().characterReplacement(
-    "BRJRRKNRBFOOKDEEGODTGMHNABMTHFNPTFRHRSEKKTFEQIKSIAJJMSDSLNSCNRNJFNFSIQDNMHDRIJIACLCJKATTFHDASGLRQSFN", 10))

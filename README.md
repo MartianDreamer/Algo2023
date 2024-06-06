@@ -6,8 +6,8 @@ Array
 - [x] Contains Duplicate - https://leetcode.com/problems/contains-duplicate/ [Solution](array/217_contains_dup.py)
 - [x] Product of Array Except Self - https://leetcode.com/problems/product-of-array-except-self/ [Solution](array/238_product_of_array_except_self.py)
 - [x] Maximum Subarray - https://leetcode.com/problems/maximum-subarray/ - [Solution](array/53_maximum_subarray.py)
-- [ ] Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/
-- [ ] Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+- [x] Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/ - [Solution](array/152_maximum_product_subarray.py)
+- [x] Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ - [Solution](array/153_find_minimum_in_rotated_sorted_array.py)
 - [ ] Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
 - [ ] 3Sum - https://leetcode.com/problems/3sum/
 - [ ] Container With Most Water - https://leetcode.com/problems/container-with-most-water/
@@ -86,7 +86,7 @@ Matrix
 String
 
 - [x] Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/ - [Solution](string/3_longest_substring_without_repeating_characters.py)
-- [ ] Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/ - [Solution](string/424_longest_repeating_character_replacement.py)
+- [x] Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/ - [Solution](string/424_longest_repeating_character_replacement.py)
 - [ ] Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
 - [ ] Valid Anagram - https://leetcode.com/problems/valid-anagram/
 - [ ] Group Anagrams - https://leetcode.com/problems/group-anagrams/
