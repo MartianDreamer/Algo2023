@@ -86,7 +86,7 @@ Matrix
 String
 
 - [x] Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/ - [Solution](string/3_longest_substring_without_repeating_characters.py)
-- [ ] Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/
+- [ ] Longest Repeating Character Replacement - https://leetcode.com/problems/longest-repeating-character-replacement/ - [Solution](string/424_longest_repeating_character_replacement.py)
 - [ ] Minimum Window Substring - https://leetcode.com/problems/minimum-window-substring/
 - [ ] Valid Anagram - https://leetcode.com/problems/valid-anagram/
 - [ ] Group Anagrams - https://leetcode.com/problems/group-anagrams/
