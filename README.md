@@ -8,7 +8,7 @@ Array
 - [x] Maximum Subarray - https://leetcode.com/problems/maximum-subarray/ - [Solution](array/53_maximum_subarray.py)
 - [x] Maximum Product Subarray - https://leetcode.com/problems/maximum-product-subarray/ - [Solution](array/152_maximum_product_subarray.py)
 - [x] Find Minimum in Rotated Sorted Array - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ - [Solution](array/153_find_minimum_in_rotated_sorted_array.py)
-- [ ] Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/
+- [x] Search in Rotated Sorted Array - https://leetcode.com/problems/search-in-rotated-sorted-array/ - [Solution](array/33_search_in_rotated_sorted_array.py)
 - [x] 3Sum - https://leetcode.com/problems/3sum/ - [Solution](array/15_3sum.py)
 - [x] Container With Most Water - https://leetcode.com/problems/container-with-most-water/ - [Solution](array/11_container_with_most_water.py)
 
