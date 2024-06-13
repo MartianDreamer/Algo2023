@@ -26,12 +26,12 @@ Binary
 
 Dynamic Programming
 
-- [x] Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
-- [x] Coin Change - https://leetcode.com/problems/coin-change/
-- [x] Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
-- [ ] Longest Common Subsequence - https://leetcode.com/problems/longest-common-subsequence/
+- [x] Climbing Stairs - https://leetcode.com/problems/climbing-stairs/ - [Solution](dynamic_programming/70_climbing_stairs.py)
+- [x] Coin Change - https://leetcode.com/problems/coin-change/ - [Solution](dynamic_programming/322_coin_change.py)
+- [x] Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/ - [Solution](dynamic_programming/300_longest_increasing_subsequence.py)
+- [ ] Longest Common Subsequence - https://leetcode.com/problems/longest-common-subsequence/ 
 - [ ] Word Break Problem - https://leetcode.com/problems/word-break/
-- [ ] Combination Sum - https://leetcode.com/problems/combination-sum-iv/
+- [x] Combination Sum - https://leetcode.com/problems/combination-sum-iv/ - [Solution](dynamic_programming/377_combination_sum_4.py)
 - [ ] House Robber - https://leetcode.com/problems/house-robber/
 - [ ] House Robber II - https://leetcode.com/problems/house-robber-ii/
 - [ ] Decode Ways - https://leetcode.com/problems/decode-ways/
