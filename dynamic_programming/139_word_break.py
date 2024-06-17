@@ -14,5 +14,5 @@ class Solution:
 
 
 print(Solution().wordBreak("applepenapple", ["apple", "pen"]))
-# print(Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"]))
+print(Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"]))
 print(Solution().wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]))
