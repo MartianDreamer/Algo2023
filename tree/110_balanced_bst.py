@@ -10,7 +10,6 @@ class TreeNode:
 
 
 class Solution:
-    height_dict: dict[TreeNode, int] = {}
 
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         return root is None or abs(self.height(root.left) - self.height(root.right)) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right)
@@ -18,8 +17,5 @@ class Solution:
     def height(self, root: Optional[TreeNode]) -> int:
         if root is None:
             return 0
-        if root in self.height_dict:
-            return self.height_dict[root]
-        self.height_dict[root] = 1 + \
+        return 1 + \
             max(self.height(root.left), self.height(root.right))
-        return self.height_dict[root]
