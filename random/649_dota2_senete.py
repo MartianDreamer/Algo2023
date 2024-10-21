@@ -23,5 +23,3 @@ class Solution:
                         except:
                             next_d = senators.index("D")
                             senators[next_d] = "x"
-
-print(Solution().predictPartyVictory("DRRDRDRDRDDRDRDR"))
