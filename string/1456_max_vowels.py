@@ -10,5 +10,3 @@ class Solution:
                 k_str_count += 1
             rs = max(rs, k_str_count)
         return rs
-
-print(Solution().maxVowels("abciiidef", 3))
