@@ -8,7 +8,6 @@ class Solution:
         from math import gcd
         return gcd(count1, count2)*div
 
-
 def detect_divisor(s: str) -> str:
     divisor = ""
     for c in s:
