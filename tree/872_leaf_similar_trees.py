@@ -24,9 +24,3 @@ def dfs_compare(root: TreeNode, leaves: list[int]) -> bool:
     left_compare = True if root.left is None else dfs_compare(root.left, leaves)
     right_compare = True if root.right is None else dfs_compare(root.right, leaves)
     return left_compare and right_compare
-
-
-t1 = TreeNode.make_tree([3,5,1,6,7,4,2,None,None,None,None,None,None,9,11,None,None,8,10])
-t2 = TreeNode.make_tree([3,5,1,6,2,9,8,None,None,7,4])
-
-print(Solution().leafSimilar(t1, t2))
