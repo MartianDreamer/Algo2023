@@ -2,11 +2,11 @@
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
-        self.left = left
-        self.right = right
+        self.left: TreeNode | None = left
+        self.right: TreeNode | None = right
 
     @classmethod
-    def make_tree(cls, nums: list[int]):
+    def make_tree(cls, nums: list[int | None]):
         nodes = [TreeNode(num) if num is not None else None for num in nums]
         if len(nodes) == 0:
             return None
