@@ -1,5 +1,4 @@
 from typing import List
-from __test_cases.test_1926 import params
 
 
 class Solution:
@@ -52,6 +51,3 @@ class Solution:
 
 def position_to_int(row: int, col: int) -> int:
     return row * 1000 + col
-
-
-print(Solution().nearestExit(params[0], params[1]))
