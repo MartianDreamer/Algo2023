@@ -15,9 +15,8 @@ class Solution:
             if nums[middle] < nums[middle - 1]:
                 left = middle - 2
                 right = middle
-                middle = (left + right) // 2
             elif nums[middle] < nums[middle + 1]:
                 right = middle + 2
                 left = middle
-                middle = (left + right) // 2
+            middle = (left + right) // 2
         return middle
