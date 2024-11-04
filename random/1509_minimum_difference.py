@@ -1,5 +1,4 @@
 from typing import List
-from data import params
 
 
 class Solution:
