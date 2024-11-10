@@ -9,11 +9,14 @@ def random_array_int(lower:int, upper:int, lenght: int) -> List[int]:
 def main():
     args = sys.argv
     if len(args) < 2:
-        print("what do you want to generate? Be specific.\n")
+        print("Usage: What do you want to generate? Be specific.\n")
         exit(1)
     generate_type = args[1]
     match generate_type:
-        case "arr" | "a" | "array": 
+        case "arr" | "a" | "array":
+            if len(args) < 5:
+                print("Usage: You need 3 parameters in following order lowerbound upperbound length.\n")
+                exit(1)
             print(random_array_int(int(args[2]), int(args[3]), int(args[4])))
         case _:
             print("unsupported type")
