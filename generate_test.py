@@ -18,6 +18,11 @@ def main():
                 print("Usage: You need 3 parameters in following order lowerbound upperbound length.\n")
                 exit(1)
             print(random_array_int(int(args[2]), int(args[3]), int(args[4])))
+        case "num" | "n" | "nummber":
+            if len(args) < 4:
+                print("Usage: You need 2 parameters in following order lowerbound upperbound.\n")
+                exit(1)
+            print(random.randint(int(args[2]), int(args[3])))
         case _:
             print("unsupported type")
             exit(1)
