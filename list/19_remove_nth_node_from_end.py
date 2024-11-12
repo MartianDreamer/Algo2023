@@ -16,6 +16,6 @@ class Solution:
         prevRemove = head
         while cur.next is not None:
             cur = cur.next
-            prevRemove = prevRemove.next
-        prevRemove.next = prevRemove.next.next
+            prevRemove = prevRemove.next # type: ignore
+        prevRemove.next = prevRemove.next.next # type: ignore
         return head
