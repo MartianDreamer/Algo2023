@@ -1,12 +1,12 @@
 from typing import Callable, Dict, List
-
+from math import ceil
 
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         OPERATORS: Dict[str, Callable[[int, int], int]] = {"+": lambda a, b: a + b,
                                                            "-": lambda a, b: a - b,
                                                            "*": lambda a, b: a * b,
-                                                           "/": lambda a, b: abs(a) // abs(b) * abs(a) // a * abs(b) // b}
+                                                           "/": lambda a, b: a // b if a // b >= 0 else ceil(a / b)}
         stack = []
         for t in reversed(tokens):
             if len(stack) == 0 or stack[-1] in OPERATORS or t in OPERATORS:
@@ -20,6 +20,8 @@ class Solution:
             stack.append(operand2)
         return int(stack[-1])
 
-print(Solution().evalRPN(["2", "1", "+", "3", "*"]))
-print(Solution().evalRPN(["4", "13", "5", "/", "+"]))
-print(Solution().evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"]))
+
+# print(Solution().evalRPN(["2", "1", "+", "3", "*"]))
+# print(Solution().evalRPN(["4", "13", "5", "/", "+"]))
+# print(Solution().evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"]))
+print(Solution().evalRPN(["0", "3", "/"]))
