@@ -1,9 +1,4 @@
-struct ListNode
-{
-    int val;
-    struct ListNode *next;
-};
-
+#include "list.h"
 
 struct ListNode *partition(struct ListNode *head, int x)
 {
