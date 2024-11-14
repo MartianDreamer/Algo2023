@@ -1,8 +1,8 @@
-from typing import List
+from typing import List, Optional, Self
 
 
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, next: Optional[Self] = None):
         self.val = val
         self.next = next
 
@@ -17,7 +17,7 @@ class ListNode:
             cur.next = next
             cur = cur.next
         return head
-    
+
     def __str__(self) -> str:
         rs = "["
         cur = self
@@ -29,6 +29,7 @@ class ListNode:
         rs += "]"
         return rs
 
+
 if __name__ == "__main__":
-    nodeList = ListNode.makeList([1,2,3,4,5,6,7,8,9,10])
+    nodeList = ListNode.makeList([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     print(nodeList)
