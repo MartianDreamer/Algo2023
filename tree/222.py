@@ -30,6 +30,3 @@ def height_of(root: Optional[TreeNode]) -> int:
         cur = cur.left
         h += 1
     return h
-
-t = TreeNode.make_tree([1,2,3,4,5])
-print(Solution().countNodes(t))
