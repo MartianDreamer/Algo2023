@@ -10,7 +10,9 @@ class Solution:
             return [
                 (r, c)
                 for r, c in rs
-                if 0 <= r < len(board) and 0 <= c < len(board[0]) and board[r][c] == "O"
+                if 0 <= r < len(board)
+                and 0 <= c < len(board[0])
+                and board[r][c] == "O"
             ]
 
         def bfs(row: int, col: int):
@@ -29,7 +31,8 @@ class Solution:
                 for r1, c1 in fneighbours:
                     board[r1][c1] = "X"
                 if surrounded and (
-                    r == 0 or r == len(board) - 1 or c == 0 or c == len(board[0]) - 1
+                    r == 0 or r == len(board) - 1
+                    or c == 0 or c == len(board[0]) - 1
                 ):
                     surrounded = False
             if not surrounded:
@@ -41,4 +44,3 @@ class Solution:
                 bfs(r, c)
         for r, c in not_surrouneded:
             board[r][c] = "O"
-
