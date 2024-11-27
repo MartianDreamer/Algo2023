@@ -1,6 +1,4 @@
 from typing import Dict, List
-import __params
-
 
 class Solution:
     def shortestDistanceAfterQueries(
@@ -35,9 +33,3 @@ class Solution:
             rs.append(prev)
 
         return rs
-
-
-print(Solution().shortestDistanceAfterQueries(8,[[0,4],[3,6],[2,5],[0,3]]))
-# print(Solution().shortestDistanceAfterQueries(*__params.params1))
-# print(Solution().shortestDistanceAfterQueries(*__params.params2))
-# print(Solution().shortestDistanceAfterQueries(*__params.params3))
