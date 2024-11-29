@@ -13,5 +13,3 @@ class Solution:
                 maxdiff = max(maxdiff, dp[i - 1][j] - prices[j])
 
         return dp[k][n - 1]
-
-print(Solution().maxProfit(2, [2, 4, 1]))
